@@ -4,8 +4,10 @@
 
   .intro {
     display: flex;
+    @media @phone {
+      flex-direction: column;
+    }
     
-
     h2 {
       padding: 15px;
       margin: 0; 
@@ -31,16 +33,19 @@
     }
     img {
       max-width: 60%;
+      @media @phone{
+        max-width: 100%;
+      }
       &:hover {
         .make-keyframes2(moveY, 10px);
         animation: moveY 1s; 
       }
-      @media @phone {
-        max-width: 500px;
-        width: 100%; 
-        margin: 0 auto; 
-        .roundedImage(10px);
-    }
+    //   @media @phone {
+    //     max-width: 500px;
+    //     width: 100%; 
+    //     margin: 0 auto; 
+    //     .roundedImage(10px);
+    // }
     }
   
   }
@@ -63,6 +68,7 @@
         max-width: 100%;
       }
     }
+
   }
 
   .feature2 {

@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
 }
 h1,
 h2,
@@ -143,7 +142,6 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
@@ -213,10 +211,9 @@ p {
   color: #006FBB;
 }
 .nav nav a {
-  padding: 0 1%;
   padding-top: 3%;
-  margin: 0 5%;
-  width: 22%;
+  margin: 0 3%;
+  width: 40%;
   height: 50px;
   border-radius: 10px;
   font-size: 2.1rem;
@@ -246,6 +243,11 @@ footer {
 .home .intro {
   display: flex;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    flex-direction: column;
+  }
+}
 .home .intro h2 {
   padding: 15px;
   margin: 0;
@@ -271,20 +273,17 @@ footer {
 .home .intro img {
   max-width: 60%;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    max-width: 100%;
+  }
+}
 .home .intro img:hover {
   animation: moveY 1s;
 }
 @keyframes moveY {
   to {
     transform: translateY(10px);
-  }
-}
-@media (max-width: 500px) {
-  .home .intro img {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
   }
 }
 .home .feature1 {
