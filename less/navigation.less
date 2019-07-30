@@ -12,7 +12,7 @@
     // overflow: hidden; 
     // position: fixed; 
     // top: 0; 
-    @media @phone {
+    @media @tablet {
         width: 100%;
         margin: 0 auto; 
         flex-direction: column;
@@ -25,18 +25,18 @@
         font-size: 4rem; 
         margin: 0; 
         padding: 0 1%; 
-        @media @phone {
+        @media @tablet {
             width: 55%; 
+            text-align: center;
         }
     }
     nav {
         width: 60%;  
-        font-size: 1.8rem;
         height: 100%;
         display: flex;
         justify-content: flex-end;
 
-        @media @phone {
+        @media @tablet {
             margin-bottom: 3%; 
             padding: 0;
             margin: 0; 
@@ -46,13 +46,13 @@
         .join-now {
             background: @button-bg;
             color: white;
-            width: 30%;
+            width: 33%;
             margin-left: 5%; 
             &:hover {
                 background: white;
                 color: @button-bg;
             }
-            @media @phone {
+            @media @tablet {
                 width: 20%; 
                 height: 25px; 
                 margin-left: 12%; 
@@ -62,12 +62,12 @@
         .sign-in {
             background: white;
             color: @button-bg;
-            width: 30%;
+            width: 35%;
             &:hover {
                 background: @button-bg;
                 color: white;
             }
-            @media @phone {
+            @media @tablet {
                 width: 20%; 
                 height: 25px;
             }
@@ -78,11 +78,11 @@
             width: 25%; 
             height: 40px;
             border-radius: 10px;
-            font-size: 2rem;
+            font-size: 1.65rem;
             text-align: center;
             padding-top: 1%; 
             text-decoration: none; 
-            @media @phone {
+            @media @tablet {
                 width: 10%; 
                 font-size: 1.2rem; 
             }
